@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E79B35CD22CF0655003C7B74 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B35CC22CF0655003C7B74 /* Ball.m */; };
+		E79B35D022CF0664003C7B74 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B35CF22CF0664003C7B74 /* Player.m */; };
+		E79B35F522D4F204003C7B74 /* AIPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B35F422D4F204003C7B74 /* AIPlayer.m */; };
 		E7EA632422CABB3700736819 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EA632322CABB3700736819 /* AppDelegate.m */; };
 		E7EA632722CABB3700736819 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EA632622CABB3700736819 /* ViewController.m */; };
 		E7EA632A22CABB3700736819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7EA632822CABB3700736819 /* Main.storyboard */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E79B35CB22CF0655003C7B74 /* Ball.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		E79B35CC22CF0655003C7B74 /* Ball.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
+		E79B35CE22CF0664003C7B74 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		E79B35CF22CF0664003C7B74 /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		E79B35F322D4F204003C7B74 /* AIPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIPlayer.h; sourceTree = "<group>"; };
+		E79B35F422D4F204003C7B74 /* AIPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIPlayer.m; sourceTree = "<group>"; };
 		E7EA631F22CABB3700736819 /* Pong Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pong Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EA632222CABB3700736819 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7EA632322CABB3700736819 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +48,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E79B35CA22CF0609003C7B74 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E79B35CB22CF0655003C7B74 /* Ball.h */,
+				E79B35CC22CF0655003C7B74 /* Ball.m */,
+				E79B35CE22CF0664003C7B74 /* Player.h */,
+				E79B35CF22CF0664003C7B74 /* Player.m */,
+				E79B35F322D4F204003C7B74 /* AIPlayer.h */,
+				E79B35F422D4F204003C7B74 /* AIPlayer.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
 		E7EA631622CABB3700736819 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +80,7 @@
 		E7EA632122CABB3700736819 /* Pong Game */ = {
 			isa = PBXGroup;
 			children = (
+				E79B35CA22CF0609003C7B74 /* Entities */,
 				E7EA632222CABB3700736819 /* AppDelegate.h */,
 				E7EA632322CABB3700736819 /* AppDelegate.m */,
 				E7EA632522CABB3700736819 /* ViewController.h */,
@@ -141,9 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79B35F522D4F204003C7B74 /* AIPlayer.m in Sources */,
+				E79B35CD22CF0655003C7B74 /* Ball.m in Sources */,
 				E7EA632722CABB3700736819 /* ViewController.m in Sources */,
 				E7EA633222CABB3900736819 /* main.m in Sources */,
 				E7EA632422CABB3700736819 /* AppDelegate.m in Sources */,
+				E79B35D022CF0664003C7B74 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
