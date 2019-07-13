@@ -22,6 +22,27 @@
     return self;
 }
 
+- (CGPoint) interceptTheObject: (CGPoint) center withSpeed:(CGVector) velocity
+{
+    CGPoint point = center;
+    CGVector vector = velocity;
+    while (point.y > [[UIScreen mainScreen] bounds].size.height * 0.1)
+    {
+        point = CGPointMake(point.x + vector.dx/10.0, point.y + vector.dy/10.0);
+//        NSLog(@"%f   %f   %f", point.x, point.y, [[UIScreen mainScreen] bounds].size.height * 0.1);
+    }
+    return point;
+}
+
+- (void) normalizeProspectiveDirection
+{
+//    if (self.prospectiveDirection.dx >= self.prospectiveDirection.dy) {
+//        self.prospectiveDirection = CGVectorMake((self.prospectiveDirection.dx/self.prospectiveDirection.dx) * 10.0, (self.prospectiveDirection.dy / self.prospectiveDirection.dx) * 10.0);
+//    } else {
+//        self.prospectiveDirection = CGVectorMake((self.prospectiveDirection.dx/self.prospectiveDirection.dy) * 10.0, (self.prospectiveDirection.dy / self.prospectiveDirection.dy) * 10.0);
+//    }
+}
+
 - (void) recount
 {
     self.northPoint = CGPointMake(self.center.x, self.center.y + self.frame.size.height/2.0);

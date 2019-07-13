@@ -18,8 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) CGPoint westPoint;
 @property (nonatomic) CGPoint eastPoint;
 
+@property (nonatomic) CGVector prospectiveDirection;
+@property (nonatomic) CGPoint startPosition;
+
 - (instancetype) initAIPlayerWithWidth: (CGFloat) width andHeight: (CGFloat) height;
 - (void) recount;
+- (CGPoint) interceptTheObject: (CGPoint) center withSpeed:(CGVector) velocity;
+- (void) normalizeProspectiveDirection;
 
 @end
 
