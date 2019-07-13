@@ -114,21 +114,6 @@ const CGFloat maxSpeed = -10.0;
     }];
 }
 
-#pragma mark - Interactions
-- (void) AIPlayerResponse
-{
-    if (self.ball.velocity.dy < 0) {
-        CGPoint interceptPoint = [self.playerAI interceptTheObject:self.ball.center withSpeed:self.ball.velocity];
-        self.playerAI.prospectiveDirection = CGVectorMake(interceptPoint.x - self.playerAI.center.x, interceptPoint.y - self.playerAI.center.y);
-    } else {
-       self.playerAI.prospectiveDirection = CGVectorMake(self.playerAI.startPosition.x - self.playerAI.center.x, self.playerAI.startPosition.y - self.playerAI.center.y);
-    }
-    [self.playerAI normalizeProspectiveDirection];
-    [UIView animateWithDuration:0.05 delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
-        self.playerAI.center = CGPointMake(self.playerAI.center.x + self.playerAI.prospectiveDirection.dx, self.playerAI.center.y + self.playerAI.prospectiveDirection.dy);
-    } completion:^(BOOL finished){}];
-}
-
 #pragma mark - Recounter
 - (void) recountEntities
 {
