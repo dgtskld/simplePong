@@ -1,3 +1,6 @@
+This is my first public project as an iOS developer.
+I've decided to keep that project for the record.
+
 # simplePong
 Simple implementation of Pong Game written on Objective-C
 
